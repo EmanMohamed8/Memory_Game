@@ -1,18 +1,85 @@
 .begin-container {
-    max-width: 600px;
-    /* padding: 20px; */
-    /* background-color: #f7f7f7; */
-    /* border-radius: 8px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column; 
-  }
-  .begin-container p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #333;
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 10%;
+  font-family: Arabic-DroidKufi;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-font-smoothing: antialiased;
+}
+.begin-img img {
+  width: 1100px;
+  height: 400px;
+}
+.begin-container p{
+  text-align: right;
+  font-size: 18px;
+  letter-spacing: 0.013rem;
+  line-height: 2;
+  word-break: break-word;
+  overflow-x: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #606060;
+}
+.goals{
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: Arabic-DroidKufi;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 1em 0;
+  color: #222;
+}
+.begin-container ul {
+  list-style-type: decimal;
+  text-align: right;
+  direction: rtl; 
+}
+
+
+.begin-container ul li{
+  text-align: right;
+  font-size: 18px;
+  color: #606060;
+  letter-spacing: 0.013rem;
+  line-height: 2;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #ee9154; /* Fun, bright color */
+  color: #fff; /* White text for contrast */
+  transition: background-color 0.3s, color 0.3s;
+  margin: 50px;
+}
+
+button:hover {
+  background-color: rgb(223, 114, 42); /* Darker shade on hover */
+}
+
+.game-btn{
+  border-radius: 30px;
+  width: 250px;
+  margin: 20px;
+}

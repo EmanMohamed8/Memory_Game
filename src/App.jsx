@@ -3,6 +3,8 @@ import MemoryGame from "./components/MemoryGame";
 import { useDispatch } from "react-redux";
 import { getGameData } from "./store/gameActions";
 import Begin from "./begin/begin";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+
 
 const App = () => {
   const dispatch = useDispatch();
@@ -10,12 +12,14 @@ const App = () => {
   useEffect(() => {
     dispatch(getGameData());
   }, [dispatch]);
-
+  
   return(
-    <div>
-      <Begin />
-      {/* <MemoryGame /> */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Begin/>} />
+        <Route path="/game" element={<MemoryGame/>} />
+      </Routes>
+    </Router>
   )
 }
 
