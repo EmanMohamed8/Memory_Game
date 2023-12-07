@@ -1,15 +1,21 @@
 import React from "react";
 import { useSelector } from 'react-redux';
+import img from "./istockphoto-1447143270-612x612.jpg"
 
 const Alert = ({ replayClick, type, showAlert, nextLevel }) => {
 
   const currentLevel = useSelector(state => state.game.currentLevel);
   const levelCount = useSelector(state => state.game.levelCount);
   let buttonDiv, title, description;
-
+    
   switch (type) {
     case 'success':
-      buttonDiv = <button type="button" className="alert--button" onClick={() => nextLevel(false)}>Next level</button>;
+      buttonDiv = (
+        <div>
+          <img className="alert--image" src={img} alt=""/>
+          <button type="button" className="alert--button" onClick={() => nextLevel(false)}>Next level</button>
+        </div>
+      );
       title = 'Well Done!';
       description = `Congratulation! You have successfully completed ${currentLevel} of ${levelCount} levels of the game.`;
       break;

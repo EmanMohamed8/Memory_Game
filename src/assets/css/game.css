@@ -4354,7 +4354,7 @@ h6 {
   line-height: 20px;
   text-align: center;
   letter-spacing: 0.3px;
-  margin-bottom: 54px;
+  margin-bottom: 10px;
 
   /* Shades/Black */
 
@@ -4366,6 +4366,25 @@ h6 {
   width: 100%;
   align-items: center;
   height: 48px;
+  margin-bottom: 10px;
+  background: #563FE3;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  /* identical to box height, or 129% */
+
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.alert--image{
+  width: 100%;
+  align-items: center;
+  height: 150px;
   margin-bottom: 10px;
   background: #563FE3;
   border-radius: 10px;
