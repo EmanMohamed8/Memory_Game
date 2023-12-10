@@ -99,7 +99,6 @@ const MemoryGame = () => {
           updatedData[updatedChecklist[0]].status = false;
           updatedData[updatedChecklist[1]].className = "close";
           updatedData[updatedChecklist[1]].status = false;
-
           updateGameCards(updatedData);
         }
         setAttempt(newAttempt);
